@@ -1,0 +1,9 @@
+@import '~sass-mq/_mq.scss';
+
+.finance {
+  .frame {
+    filter: saturate(10) hue-rotate(100deg) invert(0.9);
+    border: 16px #fff solid;
+    outline: 1px #bbb solid;
+  }
+}

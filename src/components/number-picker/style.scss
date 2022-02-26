@@ -1,0 +1,45 @@
+@import '../../styles/_colors.scss';
+
+.number-picker {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid $color-primary-variant;
+
+  &__input {
+    background-color: $color-background;
+    border: none;
+    border-right: 1px solid $color-primary-variant;
+    color: $color-on-background;
+    height: 2rem;
+    margin: 0;
+    padding: 0.5rem;
+    width: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn-down,
+  &__btn-up {
+    align-items: center;
+    background-color: $color-background;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 1rem;
+    padding: 0;
+    width: 1.3rem;
+    color: $color-on-background; // For outline color
+
+    .icon {
+      fill: $color-primary-variant;
+    }
+  }
+
+  &__btn-down:hover,
+  &__btn-up:hover {
+    background-color: $color-on-background;
+  }
+}

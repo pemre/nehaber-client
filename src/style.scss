@@ -1,0 +1,83 @@
+@import '~sass-mq/_mq.scss';
+@import './styles/_reset.scss';
+@import './styles/_colors.scss';
+
+$max-columns: 10;
+
+/* ================
+ *  PAGE RULES
+ * ================ */
+body {
+  @include mq($from: tablet) {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  @include mq($from: desktop) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  @include mq($from: wide) {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-bottom: 8rem;
+  }
+
+  background: $color-background;
+  color: $color-on-background;
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 2rem 0;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+/* ================
+ *  ROWS & COLUMNS
+ * ================ */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+[class*='col-'] {
+  margin-bottom: 1rem;
+}
+
+@for $i from 1 through $max-columns {
+  .col-#{$i} {
+    width: calc(1/#{$i}*100% - (1 - 1/#{$i})*1rem);
+  }
+}
+
+.col-1 {
+  @include mq($until: tablet) {
+  }
+
+  margin-bottom: -1px;
+}
+
+/* ================
+ *  OTHER
+ * ================ */
+
+.title {
+  @include mq($from: tablet) {
+    margin-left: 0;
+  }
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    margin-right: 1rem;
+  }
+}

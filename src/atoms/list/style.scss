@@ -1,0 +1,14 @@
+@import '~sass-mq/_mq.scss';
+@import '../../styles/_colors.scss';
+
+.list {
+  &__item {
+    @include mq($from: tablet) {
+      border: 1px solid $color-primary-variant;
+    }
+
+    border-top: 1px solid $color-primary-variant;
+    border-bottom: 1px solid $color-primary-variant;
+    padding: 1rem;
+  }
+}

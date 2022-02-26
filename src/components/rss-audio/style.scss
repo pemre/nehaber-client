@@ -1,0 +1,12 @@
+@import '~sass-mq/_mq.scss';
+@import '../../styles/_colors.scss';
+
+.rss-audio {
+  &__title {
+      line-height: 1.2;
+  }
+
+  &__desc {
+    margin-top: 0.5rem;
+  }
+}
