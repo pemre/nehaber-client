@@ -2,6 +2,13 @@ const BASE_URL = 'https://nehaber-server.herokuapp.com/';
 
 const initialData = {
   items: {
+    'en-rss-ua-pravda': {
+      id: 'en-rss-ua-pravda',
+      text: 'Ukrayinska Pravda',
+      type: 'rss',
+      imageUrl: 'https://i.imgur.com/Fiki87e.png',
+      url: BASE_URL + 'en-rss-ua-pravda',
+    },
     'fr-audio-rfi': {
       id: 'fr-audio-rfi',
       text: 'Journal en français facile',
@@ -99,18 +106,19 @@ const initialData = {
       id: 'disabled',
       title: 'Disabled',
       itemIds: [
+        'tr-rss-bbc-turkce',
+        'tr-swiper-cumhuriyet',
+        'tr-rss-deutsche-welle',
+        'tr-social-eksi-sozluk',
+        'tr-images-gazeteler',
         'fr-audio-rfi',
         'fr-rss-audio-rfi',
-        'nl-rss-audio-npo',
-        'tr-finance',
-        'tr-images-gazeteler',
-        'tr-rss-bbc-turkce',
-        'tr-rss-deutsche-welle',
-        'tr-rss-webtekno',
-        'tr-social-eksi-sozluk',
-        'tr-swiper-cumhuriyet',
         'tr-swiper-odatv',
+        'tr-finance',
+        'nl-rss-audio-npo',
         'tr-swiper-sozcu',
+        'en-rss-ua-pravda',
+        'tr-rss-webtekno',
       ],
     },
   },
