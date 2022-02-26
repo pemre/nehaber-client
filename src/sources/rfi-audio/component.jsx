@@ -9,14 +9,14 @@ const url = 'https://aod-rfi.akamaized.net/rfi/francais/audio/jff/'
 const today = new Date();
 const srcToday = url
   .replaceAll('{YEAR}', today.getFullYear())
-  .replaceAll('{MONTH}', today.getMonth() + 1)
-  .replaceAll('{DAY}', today.getDate());
+  .replaceAll('{MONTH}', (today.getMonth() + 1).toString().padStart(2, '0'))
+  .replaceAll('{DAY}', today.getDate().toString().padStart(2, '0'));
 
 const yesterday = new Date(today.setDate(today.getDate() - 1));
 const srcYesterday = url
   .replaceAll('{YEAR}', yesterday.getFullYear())
-  .replaceAll('{MONTH}', yesterday.getMonth() + 1)
-  .replaceAll('{DAY}', yesterday.getDate());
+  .replaceAll('{MONTH}', (yesterday.getMonth() + 1).toString().padStart(2, '0'))
+  .replaceAll('{DAY}', yesterday.getDate().toString().padStart(2, '0'));
 
 export const Component = () => (
   <audio controls preload="metadata" style={{ width: '100%' }}>
