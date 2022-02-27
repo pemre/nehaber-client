@@ -10,10 +10,5 @@
   li {
     display: flex;
     justify-content: space-between;
-
-    &:before {
-      //content: '⚫';
-      //margin-right: 0.5rem;
-    }
   }
 }

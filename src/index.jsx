@@ -15,7 +15,6 @@ import { STORAGE_TYPE } from './lib/enums';
 import { Component as AudioComponent } from './sources/rfi-audio/component';
 import { FinanceComponent } from './sources/finance/component';
 import { Component } from './sources/eksi-sozluk/component';
-// import { Component as ImagesComponent } from './sources/tr-images-gazeteler/component';
 import { ImageSwiper } from './components/image-swiper';
 import { Rss } from './components/rss';
 import { RssAudio } from './components/rss-audio';
@@ -62,10 +61,6 @@ const App = () => {
           case 'finance':
             component = FinanceComponent;
             break;
-            // TODO Merge images & ImageSwiper
-          // case 'images':
-          //   component = ImagesComponent;
-          //   break;
           case 'image-swiper':
             component = ImageSwiper;
             break;
