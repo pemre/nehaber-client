@@ -2,7 +2,6 @@ import './style.scss';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const BASE_URL = 'https://eksisozluk.com';
 const getRankColor = (i) => {
   if (i > 1000) return '#ff0000';
   if (i > 500) return '#ff8000';
@@ -22,7 +21,7 @@ export const Component = ({ items, columns }) => (
     {items.map(({ rank, title, url }) => (
       <li key={url}>
         <a
-          href={BASE_URL + url}
+          href={url}
           rel="noopener noreferrer"
           style={{ color: getRankColor(rank) }}
           target="_blank"
