@@ -95,6 +95,13 @@ const initialData = {
       imageUrl: 'https://i.imgur.com/ZQHLLEc.png',
       url: BASE_URL + 'tr-swiper-sozcu',
     },
+    'tr-swiper-veryansintv': {
+      id: 'tr-swiper-veryansintv',
+      text: 'VeryansınTV',
+      type: 'image-swiper',
+      imageUrl: 'https://i.imgur.com/cnYtyIm.png',
+      url: BASE_URL + 'tr-swiper-veryansintv',
+    },
   },
   columns: {
     enabled: {
@@ -118,6 +125,7 @@ const initialData = {
         'nl-rss-audio-npo',
         'tr-swiper-sozcu',
         'en-rss-ua-pravda',
+        'tr-swiper-veryansintv',
         'tr-rss-webtekno',
       ],
     },
